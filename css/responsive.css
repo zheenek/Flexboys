@@ -1,0 +1,64 @@
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 7px;
+    }
+    
+    .visible-lg {
+        display: none;
+    }
+    
+    .m-menu-link {
+        display: block;
+    }
+    
+    .get-started-btn {
+        margin: 0;
+    }
+    
+    .price-tags {
+        flex-direction: column;
+    }
+    
+    .price-tag {
+        width: 74%;
+        margin: 2rem auto;
+    }
+    
+    .price-tag p {
+        width: 80%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+    
+    .footer-wrap {
+        justify-content: center;
+    }
+    
+    .footer-logo {
+        display: none;
+    }
+    
+    .footer{
+        display: none;
+    }
+    
+    .social {
+        padding-top: 3rem;
+    }
+    
+    .social a{
+        font-size: 5rem;
+    }
+    
+    .info {
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+}

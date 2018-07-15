@@ -1,0 +1,487 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+/****************************************************
+    1-й блок
+*****************************************************/
+
+
+
+.main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-overlay, .call-to-action-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
+    background-image: -webkit-linear-gradient(150deg, rgb(136,201,236) 0%, rgb(150,69,226) 100%);
+    background-image: -moz-linear-gradient(150deg, rgb(136,201,236) 0%, rgb(150,69,226) 100%);
+    background-image: -ms-linear-gradient(150deg, rgb(136,201,236) 0%, rgb(150,69,226) 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+    font-size: 0.9em;
+}
+
+.menu {
+    width: 70%;
+    font-size: 14px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.get-started-btn {
+    margin-left: 50px;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: background-color .3s ease-out;
+}
+
+.main-point {
+    transition: border-bottom .12s ease-in-out;
+}
+
+.main-point:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.get-started-btn:hover {
+    cursor: pointer;
+    background-color: rgba(150,69,226,0.5);
+}
+
+img {
+    height: 3em;
+    width: 3em;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.main-text h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.main-text span {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.main-text p {
+    font-size: 14px;
+}
+
+.main-text span::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.main-text span::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.main-arrow {
+    position: relative;
+    z-index: 2;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px rgba(204,204,223, 0.5);
+}
+
+img.arrow {
+    margin-top: 1rem;
+}
+
+
+
+/****************************************************
+    2-й блок
+*****************************************************/
+
+
+
+.table {
+    background-color: #f9fafc;
+    width: 100%;
+    padding: 8rem;
+    position: relative;
+}
+
+.table-header {
+    text-align: center;
+    width: 100%;
+}
+
+.table-header span {
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.table-header span::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.table-header span::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.table-header h2 {
+    color: #4f4f6f;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.table-header p {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 40rem;
+    line-height: 1.4;
+    color: #9fa4af;
+}
+
+.price-tags {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.price-tag {
+    margin: 3em auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 420px;
+    text-align: center;
+    border: 2px solid #f3f3f3;
+    transition: 0.2s ease-out;
+}
+
+.price-tag:hover {
+    cursor: pointer;
+    box-shadow: 0 0 60px 10px rgba(204,204,223,0.7);
+}
+
+.price-tag img {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem auto;
+}
+
+.price-tag span {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.price-tag h4 {
+    color: #4f4f6f;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin: 1rem;
+}
+
+.price-tag h4 sup {
+    vertical-align: super;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.price-tag h4 sub {
+    font-size: 1.4rem;
+}
+
+.price-tag p {
+    color: #9fa4af;
+    font-size: 1.2rem;
+}
+
+.price-btn {
+    width: 20rem;
+    height: 4rem;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #9fa4af;
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 100px;
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.price-btn:hover {
+    cursor: pointer;
+    background-color: #6e45e2;
+    color: #fff;
+}
+
+
+
+/****************************************************
+    3-й блок
+*****************************************************/
+
+
+
+.call-to-action {
+    background: url(../img/worldmap.jpeg) no-repeat center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 20rem;
+    color: #fff;
+}
+
+.call-to-action span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.call-to-action h4 {
+    font-weight: 500;
+    font-size: 5rem;
+    margin: 1rem auto 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    border: none;
+    background-color: #fff;
+    color: #c2c9db;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem;
+    border-radius: 100px;
+    transition: background-color .4s ease-out, color .4s ease-out;
+}
+
+.cta-btn:hover {
+    cursor: pointer;
+    background-color: #6e45e2;
+    color: #fff;
+}
+
+.wrap {
+    z-index: 2;
+    position: relative;
+    margin: 10em auto;
+}
+
+
+
+/****************************************************
+    Футер
+*****************************************************/
+
+
+
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.footer-logo {
+    padding-left: 3rem;
+}
+
+.footer-menu {
+    width: 60%;
+}
+
+.footer-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.footer-gst {
+    margin-left: 50px;
+    background-color: #6e45e2;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+
+.line {
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #333;
+    margin: 1rem auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.copy {
+    font-size: 1.4rem;
+    color: #6a6a77;
+}
+
+.social a {
+    color: #6a6a77;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.m-menu-link {
+    display: none;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.m-menu {
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    font-size: 3rem;
+    line-height: 6rem;
+    background-color: #6e45e2;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-out;
+    transform: translateX(100%);
+}
+
+.m-menu_active {
+    transform: translateX(0%);
+}
+
+.close-menu {
+    position: fixed;
+    right: 5rem; top: 5rem;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.close-menu:hover {
+    cursor: pointer;
+}
